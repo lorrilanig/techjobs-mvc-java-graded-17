@@ -14,19 +14,19 @@
     <table class="job-listing" th:each = "value : ${jobs}">
       <tbody>
         <tr>
-          <td>ID</td>
+          <td th:text="ID"></td>
           <td th:text="${value.id}"></td>
         </tr>
         <tr>
-          <td>Name</td>
+          <td th:text="Name"></td>
           <td th:text="${value.name}"></td>
         </tr>
         <tr>
-          <td>Employer</td>
+          <td th:text="Employer"></td>
           <td th:text="${value.employer}"></td>
         </tr>
         <tr>
-          <td>Location</td>
+          <td th:text="Location"></td>
           <td th:text="${value.location}"></td>
         </tr>
         <tr>
@@ -34,7 +34,7 @@
           <td th:text="${value.positionType}"></td>
         </tr>
         <tr>
-          <td>Skill</td>
+          <td th:text="Skill"></td>
           <td th:text="${value.coreCompetency}"></td>
         </tr>
       </tbody>
