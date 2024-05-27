@@ -37,33 +37,33 @@
   <hr />
 
   <!-- TODO #4 - Loop over the search results to display all job fields. -->
-    <table class="job-listing" th:each = "value : ${jobs}">
-        <tbody>
-        <tr>
-            <td th:text="ID"></td>
-            <td th:text="${value.id}"></td>
-        </tr>
-        <tr>
-            <td th:text="Name"></td>
-            <td th:text="${value.name}"></td>
-        </tr>
-        <tr>
-            <td th:text="Employer"></td>
-            <td th:text="${value.employer}"></td>
-        </tr>
-        <tr>
-            <td th:text="Location"></td>
-            <td th:text="${value.location}"></td>
-        </tr>
-        <tr>
-            <td>Position Type</td>
-            <td th:text="${value.positionType}"></td>
-        </tr>
-        <tr>
-            <td th:text="Skill"></td>
-            <td th:text="${value.coreCompetency}"></td>
-        </tr>
-        </tbody>
+    <table th:replace="list-jobs :: job-tables">
+<!--        <tbody>-->
+<!--        <tr>-->
+<!--            <td th:text="ID"></td>-->
+<!--            <td th:text="${value.id}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td th:text="Name"></td>-->
+<!--            <td th:text="${value.name}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td th:text="Employer"></td>-->
+<!--            <td th:text="${value.employer}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td th:text="Location"></td>-->
+<!--            <td th:text="${value.location}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Position Type</td>-->
+<!--            <td th:text="${value.positionType}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td th:text="Skill"></td>-->
+<!--            <td th:text="${value.coreCompetency}"></td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
     </table>
 </div>
 
